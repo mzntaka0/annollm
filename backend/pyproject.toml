@@ -1,0 +1,27 @@
+[project]
+name = "annollm"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Takao Mizuno", email = "takao.mizuno110@gmail.com" }
+]
+dependencies = [
+    "fastapi[all]>=0.103.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+license = { text = "Apache-2.0" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.7.0",
+    "autoflake8>=0.4.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
