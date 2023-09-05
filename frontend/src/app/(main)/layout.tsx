@@ -5,7 +5,6 @@ import { Stack } from "@mui/material";
 import Headroom from "react-headroom";
 
 import Header from "./Header";
-import Sidebar from "./Sidebar";
 import Providers from "./Providers";
 
 type Props = {
@@ -28,12 +27,8 @@ const Layout: React.FC<Props> = (props) => {
             width: "100vw",
             height: `calc(100vh - ${headerHeight})`,
           }}
-          spacing={4}
         >
-          <Stack spacing={3} height="100%" direction="row">
-            <Sidebar />
-            {children}
-          </Stack>
+          {children}
         </Stack>
       </Providers>
     </>
