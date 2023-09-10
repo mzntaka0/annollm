@@ -6,7 +6,12 @@ authors = [
     { name = "Takao Mizuno", email = "takao.mizuno110@gmail.com" }
 ]
 dependencies = [
-    "fastapi[all]>=0.103.1",
+    "fastapi>=0.103.1",
+    "pydantic==1.8.2",
+    "pytz>=2023.3.post1",
+    "uvicorn>=0.23.2",
+    "sqlmodel>=0.0.8",
+    "alembic>=1.12.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -21,6 +26,7 @@ managed = true
 dev-dependencies = [
     "black>=23.7.0",
     "autoflake8>=0.4.1",
+    "ruff>=0.0.287",
 ]
 
 [tool.hatch.metadata]

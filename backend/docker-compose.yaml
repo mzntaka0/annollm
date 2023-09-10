@@ -3,7 +3,10 @@ version: "3.0"
 services:
   api:
     container_name: "annollm"
-    build: .
+    build:
+      context: .
+      args:
+        PYTHON_VERSION: 3.11.3
     restart: always
     env_file:
       - .env
