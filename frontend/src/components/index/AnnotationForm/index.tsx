@@ -40,7 +40,6 @@ const Form: React.FC<Props> = (props) => {
     defaultValues,
     resolver: zodResolver(Schema),
   });
-  const ctrl = new AbortController();
 
   const onSubmit: SubmitHandler<FormType> = async (values) => {
     setMock((prev) => [
@@ -77,7 +76,7 @@ const Form: React.FC<Props> = (props) => {
                   return (
                     <TextField
                       sx={{
-                        bgcolor: "rgba(255, 255, 255, 0.1)",
+                        bgcolor: "rgba(255, 255, 255, 0.2)",
                       }}
                       multiline
                       rows={5}
@@ -111,7 +110,7 @@ const Form: React.FC<Props> = (props) => {
                   return (
                     <TextField
                       sx={{
-                        bgcolor: "rgba(255, 255, 255, 0.1)",
+                        bgcolor: "rgba(255, 255, 255, 0.2)",
                       }}
                       multiline
                       rows={5}
@@ -145,7 +144,7 @@ const Form: React.FC<Props> = (props) => {
                   return (
                     <TextField
                       sx={{
-                        bgcolor: "rgba(255, 255, 255, 0.1)",
+                        bgcolor: "rgba(255, 255, 255, 0.2)",
                       }}
                       multiline
                       rows={5}

@@ -8,11 +8,7 @@ export const Schema = z.object({
       required_error: requiredErr(),
     })
     .min(1, { message: stringMinErr(1) }),
-  input: z
-    .string({
-      required_error: requiredErr(),
-    })
-    .min(1, { message: stringMinErr(1) }),
+  input: z.string(),
   output: z
     .string({
       required_error: requiredErr(),

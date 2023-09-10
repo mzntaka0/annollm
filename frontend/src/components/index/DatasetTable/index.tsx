@@ -1,6 +1,6 @@
 import React from "react";
-import { Stack, IconButton, Button } from "@mui/material";
-import { Edit, Delete } from "@mui/icons-material";
+import { Stack, IconButton, Button, Divider } from "@mui/material";
+import { Edit, Delete, Download } from "@mui/icons-material";
 import { DataGrid, GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
 import { useAtomValue } from "jotai";
 
@@ -66,6 +66,8 @@ const Component: React.FC = () => {
       <Stack width="100%" direction="row" justifyContent="flex-end" spacing={1}>
         <Button>Upload a file</Button>
         <Button disabled>Generate</Button>
+        <Divider orientation="vertical" />
+        <Button startIcon={<Download />}>Export as JSON</Button>
       </Stack>
       <DataGrid
         style={{
